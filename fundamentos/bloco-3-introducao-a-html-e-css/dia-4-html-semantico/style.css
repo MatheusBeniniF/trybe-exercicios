@@ -9,6 +9,7 @@ h1 {
     text-align: center;
     width: 200px;
     align-self: center;
+    margin-left: 200px;
   }
 
   .second {
@@ -17,7 +18,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    display: inline;
+    display: inline-block;
   }
 
   .third {
@@ -26,7 +27,7 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
-    display: inline;
+    display: inline-block;
   }
 
   h3 {
