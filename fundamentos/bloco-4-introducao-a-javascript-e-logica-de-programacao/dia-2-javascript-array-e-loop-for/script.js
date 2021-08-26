@@ -5,4 +5,4 @@ for(let s = 0; s < numbers.length; s++) {
     soma = soma + numbers[s];
     console.log(soma);
 }
-console.log(soma);
+console.log(soma/numbers.length);
