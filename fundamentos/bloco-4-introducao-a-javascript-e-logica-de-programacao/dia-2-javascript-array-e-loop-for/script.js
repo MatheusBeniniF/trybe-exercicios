@@ -1,8 +1,13 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let valorMaior = 0;
-for(let m = 0; m < numbers.length; m++) {
-    if(numbers[m] > valorMaior) {
-    valorMaior = numbers[m];
+let contImpares = 0;
+for (let c = 0 ; c < numbers.length; c++) {
+    if(numbers[c] % 2 != 0){
+        contImpares++;
     }
 }
-console.log(valorMaior);
+
+console.log(contImpares);
+
+if(contImpares === 0){
+    console.log('Nenhum valor ímpar encontrado');
+}
