@@ -1,13 +1,8 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let contImpares = 0;
-for (let c = 0 ; c < numbers.length; c++) {
-    if(numbers[c] % 2 != 0){
-        contImpares++;
+let valorMenor = 200;
+for (let c = 1; c < numbers.length; c++) {
+    if(numbers[c] < valorMenor) {
+        valorMenor = numbers[c];
     }
 }
-
-console.log(contImpares);
-
-if(contImpares === 0){
-    console.log('Nenhum valor ímpar encontrado');
-}
+console.log(valorMenor);
