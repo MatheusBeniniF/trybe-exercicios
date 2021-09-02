@@ -18,7 +18,7 @@ future();
 
 function changeBackgroundColor() {
  let color = document.getElementsByClassName("main-content")[0];
-  color.style.background = "rgb(76,164,109)"
+  color.style.background = "rgb(76,164,109)";
 }
 changeBackgroundColor();
 
@@ -27,3 +27,25 @@ function changeCenterBackgroundColor() {
   color.style.background = "white";
 }
 changeCenterBackgroundColor();
+
+function correctingText () {
+  let correctText = document.getElementsByClassName("title")[0];
+  correctText.innerHTML = "Exercício 5.1 - JavaScript";
+}
+correctingText();
+
+function textUpperCase() {
+  let maiusculo = document.getElementsByTagName('p');
+  for (let i = 0; i < maiusculo.length; i += 1) {
+    maiusculo[i].innerHTML = maiusculo[i].innerHTML.toUpperCase();
+  }
+}
+textUpperCase();
+
+function conteudo() {
+  let paragraphs = document.getElementsByTagName('p');
+    for (let index = 0; index < paragraphs.length; index += 1) {
+      console.log(paragraphs[index].innerHTML);
+    }
+}
+conteudo();
