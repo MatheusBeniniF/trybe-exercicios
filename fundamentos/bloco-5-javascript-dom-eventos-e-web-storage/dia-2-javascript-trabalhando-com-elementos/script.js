@@ -50,3 +50,14 @@ for (let i = 0; i < 3; i += 1) {
 const addH3 = document.createElement('h3');
 main.appendChild(addH3);
 }
+
+//Parte 2
+//1
+const addTittle = document.querySelector('h1');
+addTittle.className = 'tittle';
+
+//2
+const addDescription = document.querySelector('h3');
+for (let i = 0; i < 3; i += 1) {
+  addDescription[i].className = 'description';
+}
