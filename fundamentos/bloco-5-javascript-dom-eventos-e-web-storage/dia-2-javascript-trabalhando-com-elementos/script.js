@@ -18,3 +18,14 @@ mainClass.appendChild(sectionClass);
 const paragraph = document.createElement('p');
 paragraph.innerHTML = 'Matheus Benini Ferreira';
 sectionClass.appendChild(paragraph);
+
+//5
+const leftSection = document.createElement('section');
+leftSection.className ='left-content';
+document.main.appendChild(leftSection);
+
+//6
+const rightSection = document.createElement('section');
+rightSection.className ='right-content';
+document.main.appendChild(rightSection);
+
