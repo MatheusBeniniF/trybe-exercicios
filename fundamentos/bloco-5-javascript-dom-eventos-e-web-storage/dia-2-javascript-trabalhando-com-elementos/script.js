@@ -69,3 +69,11 @@ removeLeftSection.removeChild(removeLeftSection);
 //4
 centralRightContent = document.getElementsByClassName('right-content')[0];
 centralRightContent.style.margin-right = 'auto';
+
+//5
+changeBackgroundColor = document.getElementsByClassName('center-content')[0];
+changeBackgroundColor.parentNode.style.backgrounColor = 'grenn';
+
+//6
+ul.lastChild.remove();
+ul.lastChild.remove();
