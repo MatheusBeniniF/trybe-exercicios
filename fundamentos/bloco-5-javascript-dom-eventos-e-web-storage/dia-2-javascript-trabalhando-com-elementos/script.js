@@ -61,3 +61,11 @@ const addDescription = document.querySelector('h3');
 for (let i = 0; i < 3; i += 1) {
   addDescription[i].className = 'description';
 }
+
+//3
+const removeLeftSection = document.getElementsByClassName('left-content')[0];
+removeLeftSection.removeChild(removeLeftSection);
+
+//4
+centralRightContent = document.getElementsByClassName('right-content')[0];
+centralRightContent.style.margin-right = 'auto';
