@@ -17,7 +17,7 @@ createDaysOfTheWeek();
 //1
 let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-function(daysOfTheMonth) {
+function daysOfTheMonth() {
   let getDaysList = document.createElement('#days');
   for (let i = 0; i < dezDaysList.length; i += 1) {
     let day = dezDaysList[i];
@@ -49,3 +49,16 @@ function(daysOfTheMonth) {
   }
 }
 daysOfTheMonth();
+
+//2
+function holidaysButton(name) {
+  let button = document.querySelector('.buttons-container');
+  let buttonFeriado = document.createElement('button');
+  let buttonFeriadoID = 'btn-holiday';
+  
+  buttonFeriado.innerHTML = name;
+  buttonFeriado.id = buttonFeriadoID;
+  button.appendChild(buttonFeriado);
+}
+holidaysButton();
+
