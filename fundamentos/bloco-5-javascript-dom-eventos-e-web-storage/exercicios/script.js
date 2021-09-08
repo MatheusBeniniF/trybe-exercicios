@@ -60,7 +60,7 @@ function holidaysButton(name) {
   buttonFeriado.id = buttonFeriadoID;
   button.appendChild(buttonFeriado);
 }
-holidaysButton();
+holidaysButton('Feriados');
 
 //3
 function backgroundColorClick() {
@@ -92,4 +92,24 @@ function fridaysButton(name) {
   buttonFriday.id = buttonFridayID;
   button.appendChild(buttonFriday);
 }
-fridaysButton();
+fridaysButton('Sexta-feira');
+
+//5
+function backgroundColorClickFriday(fridays) {
+  let getFridayButton = document.querySelector('#btn-holiday');
+  let friday = document.querySelectorAll('f');
+  let fridayText = 'SEXTOU'
+  
+  getFridayButton.addEventListener('click',function() {
+    for (let i = 0 ; i < friday.length; i += 1) {
+      if (friday[i].innerHTML !== fridayText) {
+        friday[i].innerHTML = fridayText;
+      }
+      else {
+        friday[i].innerHTML = fridays[i];
+      }
+    }
+  })
+}
+let dazFriday = [4, 11, 18, 25];
+backgroundColorClickFriday(dezFridays);
