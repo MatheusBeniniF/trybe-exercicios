@@ -81,3 +81,15 @@ function backgroundColorClick() {
   })
 }
 backgroundColorClick();
+
+//4
+function fridaysButton(name) {
+  let button = document.querySelector('.buttons-container');
+  let buttonFriday = document.createElement('button');
+  let buttonFridayID = 'btn-holiday';
+  
+  buttonFriday.innerHTML = name;
+  buttonFriday.id = buttonFridayID;
+  button.appendChild(buttonFriday);
+}
+fridaysButton();
