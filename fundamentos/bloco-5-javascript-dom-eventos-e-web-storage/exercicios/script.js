@@ -17,38 +17,33 @@ createDaysOfTheWeek();
 //1
 let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-function daysOfTheMonth() {
-  let getDaysList = document.createElement('days');
-  for (let i = 0; i < dezDaysList.length; i += 1) {
-    let day = dezDaysList[i];
+function createDaysOfTheMonth() {
+  let getDaysList = document.querySelector('#days');
+
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+    let day = dezDaysList[index];
     let dayItem = document.createElement('li');
 
-    if (day === 24 || day === 31) {
+    if (day === 24 | day === 31) {
       dayItem.className = 'day holiday';
       dayItem.innerHTML = day;
       getDaysList.appendChild(dayItem);
-    }
-
-    else if (day === 4 || day === 11 || day === 18) {
+    } else if (day === 4 | day === 11 | day === 18) {
       dayItem.className = 'day friday';
       dayItem.innerHTML = day;
       getDaysList.appendChild(dayItem);
-    }
-
-    else if (day === 25) {
+    } else if (day === 25) {
       dayItem.className = 'day holiday friday';
       dayItem.innerHTML = day;
       getDaysList.appendChild(dayItem);
-    }
-
-    else {
+    } else {
       dayItem.innerHTML = day;
       dayItem.className = 'day';
       getDaysList.appendChild(dayItem);
     }
-  }
-}
-daysOfTheMonth();
+  };
+};
+createDaysOfTheMonth();
 
 //2
 function holidaysButton(name) {
@@ -135,3 +130,64 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+//7 
+function newTaskSpan(task) {
+
+  let tasksContainer = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  tasksContainer.appendChild(taskName);
+};
+
+newTaskSpan('Projeto:');
+
+//8
+function newTaskDiv(color) {
+
+  let tasksContainer = document.querySelector('.my-tasks');
+  let newTask = document.createElement('div');
+
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+  tasksContainer.appendChild(newTask);
+};
+
+newTaskDiv('green');
+
+//9
+function setTaskClass() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let myTasks = document.querySelector('.task');
+
+  myTasks.addEventListener('click', function(event) {
+    if (selectedTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+};
+
+setTaskClass();
+
+//10
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+setDayColor();
