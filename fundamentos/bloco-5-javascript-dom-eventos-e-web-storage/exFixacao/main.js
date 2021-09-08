@@ -16,9 +16,9 @@ function addClassTech(event) {
   input.value = '';
 }
 
-firstLi.addEventListener('click', addClassTech);
-secondLi.addEventListener('click', addClassTech);
-thirdLi.addEventListener('click', addClassTech);
+firstLi.addEventListener('mouseover', addClassTech);
+secondLi.addEventListener('mouseover', addClassTech);
+thirdLi.addEventListener('mouseover', addClassTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
