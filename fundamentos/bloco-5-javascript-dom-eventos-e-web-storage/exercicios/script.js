@@ -18,7 +18,7 @@ createDaysOfTheWeek();
 let dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 function daysOfTheMonth() {
-  let getDaysList = document.createElement('#days');
+  let getDaysList = document.createElement('days');
   for (let i = 0; i < dezDaysList.length; i += 1) {
     let day = dezDaysList[i];
     let dayItem = document.createElement('li');
@@ -64,12 +64,12 @@ holidaysButton('Feriados');
 
 //3
 function backgroundColorClick() {
-  let getHolidaybutton = document.querySelector('btn-holiday');
+  let getHolidaybutton = document.querySelector('#btn-holiday');
   let getHolidays = document.querySelectorAll('.holiday');
   let backgroundColor = 'rgb(238,238,238)';
   let setNewColor = 'white';
 
-  getHolidaybutton.addEventListener('click',function() {
+  getHolidaybutton.addEventListener('click', function() {
     for (let i = 0 ; i < getHolidays.length; i += 1) {
       if (getHolidays[i].style.backgroundColor === setNewColor) {
         getHolidays[i].style.backgroundColor = backgroundColor;
@@ -111,5 +111,27 @@ function backgroundColorClickFriday(fridays) {
     }
   })
 }
-let dazFriday = [4, 11, 18, 25];
-backgroundColorClickFriday(dezFridays);
+let dezFriday = [4, 11, 18, 25];
+backgroundColorClickFriday(dezFriday);
+
+//6
+function dayMouseOver() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  })
+};
+
+function dayMouseOut() {
+  let days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontWeight = '200';
+    event.target.style.fontSize = '20px';
+  })
+};
+
+dayMouseOver();
+dayMouseOut();
