@@ -5,9 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Formulário</h1>
+  <header class="form-header">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha os campos abaixo.</p>
+  </header>
   <form action=""></form>
   <fieldset>
     <div class="line-content">
@@ -48,6 +52,26 @@
       </label>
     </div>
   </fieldset>
+  <fieldset>
+    <div class="line-content">
+      <label for="resume">Resumo: </label>
+      <textarea name="resume" id="resume" maxlength="1000" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="line-content">
+      <label for="cargo">Cargo: </label>
+      <input type="text" maxlength="40" required>
+    </div>
+    <div class="line-content">
+      <label for="description">Descrição: </label>
+      <input type="text" maxlength="500" required>
+    </div>
+    <div class="line-content">
+      <label for="date">Data: </label>
+      <input type="text" class="input-data" name="date" value="" required>
+    </div>
+  </fieldset>
+  <button id="submit-button" type="submit">Enviar</button>
+  <button id="clear-button" type="button">Limpar</button>
   <script src="script.js"></script>
 </body>
 </html>
