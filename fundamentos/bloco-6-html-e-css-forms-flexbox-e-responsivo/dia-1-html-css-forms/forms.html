@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form action=""></form>
+  <fieldset>
+    <div class="line-content">
+      <label for="name">Nome: </label>
+      <input type="text" name="name" id="name" maxlength="40" required>
+    </div>
+    <div class="line-content">
+      <label for="email">Email: </label>
+      <input type="text" name="email" id="email" maxlength="50" required>
+    </div>
+    <div class="line-content">
+      <label for="cpf-number">CPF: </label>
+      <input type="number" name="cpf" id="cpf-number" maxlength="11" required>
+    </div>
+    <div class="line-content">
+      <label for="endereco">Endereço: </label>
+      <input type="text" name="endereco" id="endereco" max="200" required>
+    </div>
+    <div class="line-content">
+      <label for="city">Cidade: </label>
+      <input type="text" name="city" id="city" maxlength="28" required>
+    </div>
+    <div class="line-content">
+      <label for="state">Estado: </label>
+      <select name="state" id="state" required>
+        <option value>Selecione seu Estado</option>
+      </select>
+    </div>
+    <div class="line-content">
+      <label for="houseType">Tipo de imóvel: </label>
+      <label for="house">
+        <input type="radio" name="houseType" id="house" value="house" required checked>
+        <span>Casa</span>
+      </label> 
+      <label for="apartment"> 
+        <input type="radio" name="houseType" id="apartment" value="apartment" required>
+        <span>Apartamento</span>
+      </label>
+    </div>
+  </fieldset>
+  <script src="script.js"></script>
+</body>
+</html>
