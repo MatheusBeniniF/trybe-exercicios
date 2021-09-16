@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -14,35 +15,35 @@
     <h1 class="display-1">Formulário para cadastro de currículo</h1>
     <p class="lead">Preencha os campos abaixo.</p>
   </header>
-  <form method="GET" action=""></form>
+  <form method="GET" action="" class="js-form"></form>
   <fieldset>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="name">Nome: </label>
       <input type="text" name="name" id="name" maxlength="40" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="email">Email: </label>
       <input type="text" name="email" id="email" maxlength="50" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="cpf-number">CPF: </label>
       <input type="number" name="cpf" id="cpf-number" maxlength="11" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="endereco">Endereço: </label>
       <input type="text" name="endereco" id="endereco" max="200" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="city">Cidade: </label>
       <input type="text" name="city" id="city" maxlength="28" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="state">Estado: </label>
-      <select name="state" id="state" required>
+      <select class="lead" name="state" id="state" required>
         <option value>Selecione seu Estado</option>
       </select>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="houseType">Tipo de imóvel: </label>
       <label for="house">
         <input type="radio" name="houseType" id="house" value="house" required checked>
@@ -55,19 +56,19 @@
     </div>
   </fieldset>
   <fieldset>
-    <div class="line-content">
-      <label for="resume">Resumo: </label>
-      <textarea name="resume" id="resume" maxlength="1000" cols="30" rows="10" required></textarea>
+    <div class="line-content container">
+      <label class="form-label" for="resume">Resumo: </label>
+      <textarea class="form-control" name="resume" id="resume" maxlength="1000" cols="30" rows="10" required></textarea>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="cargo">Cargo: </label>
       <input type="text" maxlength="40" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="description">Descrição: </label>
       <input type="text" maxlength="500" required>
     </div>
-    <div class="line-content">
+    <div class="line-content container">
       <label for="date">Data: </label>
       <input type="text" class="input-data" name="date" value="" required>
     </div>
