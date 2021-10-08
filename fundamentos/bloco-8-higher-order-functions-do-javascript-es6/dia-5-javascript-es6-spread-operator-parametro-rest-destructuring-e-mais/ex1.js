@@ -78,3 +78,11 @@ const myList = [1, 2, 3];
 
 // escreva swap abaixo
 const swap = ([a, b, c]) => [c, b, a];
+
+// Exercicio 6
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+const toObject = ([name, brand, year]) => ({ name, brand, year});
