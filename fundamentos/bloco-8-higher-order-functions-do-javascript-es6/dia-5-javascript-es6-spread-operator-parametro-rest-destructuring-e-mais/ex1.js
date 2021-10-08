@@ -11,3 +11,6 @@ rectangles.forEach((rectangle) => {
   console.log(`Exercicio 1: ${rectangle[0]} * ${rectangle[1]} = ${rectangle[0]*rectangle[1]}`);
 });
 
+// Exercicio 2
+// escreva sum abaixo
+const sum = (...numbers) => numbers.reduce(((acc, value) => acc + value), 0);
