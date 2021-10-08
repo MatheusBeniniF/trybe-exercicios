@@ -72,3 +72,9 @@ const filterPeople = (arr) => arr.filter (
   nationality === 'Australian'
   && bornIn > 1901 && bornIn <= 2000,
 )
+
+// Exercicio 5
+const myList = [1, 2, 3];
+
+// escreva swap abaixo
+const swap = ([a, b, c]) => [c, b, a];
