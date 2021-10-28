@@ -1,4 +1,4 @@
-.App {
+body{
   text-align: center;
 }
 
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  background-color: blueviolet;
+}
+
+.content {
+  background-color: aquamarine;
+}
+
+.footer {
+  background-color: brown;
 }
